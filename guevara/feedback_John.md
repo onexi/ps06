@@ -1,5 +1,5 @@
 ## Overall
-An exceptionally well-bounded proof of concept that fits the four-week, 48-hour budget.
+An exceptionally well-bounded proof of concept that fits the four-week schedule.
 
 ## Possible Improvements
 Keep evaluation examples separate from development examples. Test whether the agent adds measurable value beyond the Python baseline on this small dataset, and avoid generalizing findings beyond the selected observations.

@@ -1,5 +1,5 @@
 ## Overall
-A practical prediction app with a clear audience and an achievable core within four weeks at 12 hours per week.
+A practical prediction app with a clear audience and an achievable core within four weeks.
 
 ## Possible Improvements
 RECS cleaning and survey codes may dominate development. Prioritize a simple baseline, prevent target leakage, and time-box XGBoost tuning so there is time for evaluation and the app.

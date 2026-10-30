@@ -1,5 +1,5 @@
 ## Overall
-Thoughtful scope and strong safeguards make this a realistic four-week, 48-hour prototype.
+Thoughtful scope and strong safeguards make this a realistic four-week prototype.
 
 ## Possible Improvements
 Label ambiguous emails early and keep supporting features optional. The 15–20-email dataset provides limited evidence of extraction reliability; include difficult cases and report error counts as well as percentages.
