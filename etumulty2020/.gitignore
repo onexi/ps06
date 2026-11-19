@@ -1,0 +1,16 @@
+# Personal food diary and local credentials
+/database/private/
+.env
+.env.*
+!.env.example
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# macOS metadata
+.DS_Store
+._*

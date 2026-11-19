@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IC Food App — Check a food</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#25283d;--sub:#64697c;--purple:#6253b7;--line:#e6e7ee;--bg:#f7f8fc}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;font-size:16px}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,.drop:focus-visible{outline:3px solid #9d91df;outline-offset:4px}header{height:86px;background:white;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(6%,24px)}.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.5px;font-size:21px}.mark{width:37px;height:37px;background:var(--purple);color:white;display:grid;place-items:center;border-radius:12px;font-size:21px}.topnote{font-size:14px;color:var(--sub);background:#f2f0fa;border-radius:30px;padding:9px 14px}main{max-width:1160px;padding:54px 28px 32px;margin:auto}.intro{margin-bottom:35px}.eyebrow{color:var(--purple);font-size:14px;font-weight:700;margin-bottom:14px}h1{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:56px;letter-spacing:-1.5px;margin:0 0 13px;line-height:1.06}.intro p{color:var(--sub);margin:0;line-height:1.6}.workspace{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:start}.panel{background:white;border:1px solid var(--line);border-radius:22px;padding:28px}.panelhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:23px}h2{font-size:20px;margin:0;letter-spacing:-.4px}.small{font-size:13px;color:var(--sub)}.drop{border:1.5px dashed #c9c3e4;border-radius:15px;background:#faf9fe;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:background .15s,border-color .15s}.drop.over{background:#eeebfa;border-color:var(--purple)}.uploadicon{background:#eeebf9;color:var(--purple);border-radius:16px;display:grid;place-items:center;width:61px;height:61px;margin-bottom:20px}.drop strong{font-size:18px;font-weight:600}.drop p{margin:9px 0 20px;color:var(--sub);font-size:14px}.primary{border:0;background:var(--purple);color:white;padding:12px 23px;border-radius:10px;font-weight:600;font-size:14px}button:disabled{opacity:.55;cursor:wait}.primary:hover{background:#51429f}.filetypes{font-size:12px;color:var(--sub);margin-top:15px}.uploaded{max-width:100%;max-height:175px;border-radius:8px;object-fit:contain;margin-bottom:12px}.divider{display:flex;align-items:center;gap:12px;color:#848899;font-size:12px;margin:24px 0 18px}.divider:before,.divider:after{content:'';height:1px;background:var(--line);flex:1}.samples{display:flex;flex-wrap:wrap;gap:8px}.sample{border:1px solid var(--line);background:white;padding:9px 12px;color:var(--sub);border-radius:8px;font-size:13px}.sample[aria-pressed=true]{border-color:#b9afe0;color:#51429f;background:#f3f0fc}.tip{font-size:13px;color:var(--sub);line-height:1.6;margin:20px 0 0}.status{padding:23px;border-radius:14px;background:#f0edf9;color:#493b87;margin-bottom:24px}.status.caution{background:#fff0ec;color:#8c4237}.status.friendly{background:#eaf4ed;color:#326646}.statusheading{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-bottom:12px}.status h3{font-size:25px;letter-spacing:-.7px;line-height:1.22;margin:0 0 10px;max-width:310px}.status p{font-size:14px;line-height:1.6;margin:0;opacity:.9}.product{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:22px}.productname{font-size:19px;font-weight:600;margin:0 0 6px}.productmeta{font-size:13px;color:var(--sub)}.ingredienttitle{font-size:14px;font-weight:600;margin-bottom:13px}.row{display:flex;gap:14px;align-items:center;justify-content:space-between;font-size:14px;padding:12px 0;border-bottom:1px solid #f0f0f5}.row:last-child{border:0}.rating{font-size:12px;color:var(--sub);text-align:right}.rating.good{color:#377151}.rating.warn{color:#9b4d3c}.resultnote{font-size:12px;color:var(--sub);line-height:1.65;margin:20px 0 0}.footer{display:flex;justify-content:space-between;gap:20px;padding:25px 2px;font-size:12px;color:var(--sub)}.previewmessage{background:#f2f0fa;padding:18px;border-radius:12px;font-size:14px;line-height:1.6}svg{width:25px;height:25px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.uploadicon svg{width:29px;height:29px}.statusheading svg{width:18px;height:18px}@media(max-width:760px){header{height:72px;padding:0 20px}.topnote{font-size:12px}main{padding:35px 18px}h1{font-size:43px}.workspace{grid-template-columns:1fr}.panel{padding:22px}.footer{flex-direction:column;gap:9px}.intro{margin-bottom:28px}}
+
+.reaction-area{border-top:1px solid var(--line);margin-top:22px;padding-top:22px}.reaction-form{display:grid;gap:15px;margin-top:20px}.reaction-form label{display:grid;gap:7px;font-size:14px;font-weight:500}.reaction-form input,.reaction-form select,.reaction-form textarea{font:inherit;font-size:16px;padding:11px 12px;border:1px solid #c9cbd7;border-radius:9px;background:white;color:var(--ink);width:100%}.reaction-form textarea{resize:vertical;min-height:90px}.form-actions{display:flex;gap:10px;flex-wrap:wrap}.secondary{border:1px solid var(--line);border-radius:10px;background:white;padding:11px 18px;color:var(--ink)}.saved-message{color:#326646;font-size:14px;line-height:1.6}.form-feedback{font-size:14px;line-height:1.5}.reaction-form [hidden]{display:none}
+</style>
+</head>
+<body>
+<header><div class="brand"><span class="mark" aria-hidden="true">✳</span>IC Food App</div><span class="topnote">Local checker</span></header>
+<main><div class="intro"><div class="eyebrow">A little clarity before your next bite</div><h1>How does this food fit?</h1><p>Start with a barcode photo. Explore its ingredients and bladder friendliness.</p></div>
+<div class="workspace">
+<section class="panel"><div class="panelhead"><h2>Check a food</h2><span class="small">Barcode photo</span></div>
+<div class="drop" id="drop"><div id="uploadContent"><div class="uploadicon" style="margin-left:auto;margin-right:auto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m-5 5 5-5 5 5M4 15v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></svg></div><strong>Drop your photo here</strong><p>Keep the whole barcode in the frame.</p></div><button class="primary" id="browse">Choose a photo</button><input type="file" id="file" accept="image/jpeg,image/png,image/webp" hidden><div class="filetypes">JPG, PNG or WebP · up to 20 MB</div></div>
+<div class="divider">OR EXPLORE A SAMPLE</div><div class="samples"><button class="sample" data-sample="granola" aria-pressed="true">Oats ’n Honey bar</button><button class="sample" data-sample="oatmeal" aria-pressed="false">Apple cinnamon oatmeal</button><button class="sample" data-sample="orange" aria-pressed="false">Orange</button></div><p class="tip">A clear, close-up photo works best. Avoid glare and keep the printed numbers visible.</p>
+</section>
+<section class="panel" aria-live="polite" aria-atomic="true"><div class="panelhead"><h2>Your food’s status</h2><span class="small" id="resulttag">Sample result</span></div><div id="result"></div></section>
+</div><footer class="footer"><span>Personal tolerance varies. Your experience matters.</span><span>Powered by your local IC checker · Open Food Facts</span></footer>
+</main>
+<script>
+const data={granola:{name:'Nature Valley Oats ’n Honey',meta:'Crunchy granola bars',status:'Try it and tell us how you feel',text:'No ingredients were flagged as irritating by your checker. See how this food feels for you.',rows:[['Honey','Usually bladder friendly','good'],['Salt','Type and amount unknown',''],['Natural flavor','Ingredient unclear','']],note:'Other ingredients include oats, sugar, oils and rice flour. Some ingredients have no applicable rating in your local IC database.'},oatmeal:{name:'Apples & Cinnamon Instant Oatmeal',meta:'Barcode 00910569',status:'Bladder unfriendly',text:'Your checker flagged cinnamon as a possible irritant.',rows:[['Cinnamon','Foods to avoid','warn'],['Whole grain rolled oats','Usually bladder friendly','good'],['Citric acid','Depends on amount','']],note:'“Cinnamon” uses the close match Chinese cassia cinnamon. The label does not identify the variety or amount.',caution:true},orange:{name:'Orange',meta:'Single-ingredient example',status:'Bladder unfriendly',text:'Orange matches an ingredient rated “Most bothersome” in your local IC database.',rows:[['Orange','Most bothersome','warn']],note:'This result reflects your database guidance. Individual reactions can vary.',caution:true}};
+const result=document.getElementById('result'), file=document.getElementById('file'), drop=document.getElementById('drop');
+function sample(key){const d=data[key];document.getElementById('resulttag').textContent='Sample result';result.innerHTML=`<div class="status ${d.caution?'caution':''}"><div class="statusheading"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6m0 4h.01"/></svg>IC friendliness</div><h3>${d.status}</h3><p>${d.text}</p></div><div class="product"><p class="productname">${d.name}</p><span class="productmeta">${d.meta}</span></div><div class="ingredienttitle">What your checker found</div>${d.rows.map(r=>`<div class="row"><span>${r[0]}</span><span class="rating ${r[2]}">${r[1]}</span></div>`).join('')}<p class="resultnote">${d.note}</p>`;document.querySelectorAll('[data-sample]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.sample===key));}
+document.querySelectorAll('[data-sample]').forEach(b=>b.addEventListener('click',()=>sample(b.dataset.sample)));
+document.getElementById('browse').onclick=()=>file.click();let objectURL;
+async function showFile(photo){if(busy)return;if(!photo)return;if(!['image/jpeg','image/png','image/webp'].includes(photo.type)||photo.size>20*1024*1024){document.getElementById('resulttag').textContent='Photo needs attention';result.textContent='Choose a JPG, PNG or WebP image smaller than 20 MB.';return;}if(objectURL)URL.revokeObjectURL(objectURL);objectURL=URL.createObjectURL(photo);const box=document.getElementById('uploadContent');box.replaceChildren();const img=document.createElement('img');img.src=objectURL;img.alt='Uploaded barcode photo';img.className='uploaded';const name=document.createElement('p');name.textContent=photo.name;box.append(img,name);document.getElementById('browse').textContent='Choose another photo';document.querySelectorAll('[data-sample]').forEach(b=>b.setAttribute('aria-pressed','false'));
+setBusy(true);
+document.getElementById('resulttag').textContent='Checking photo…';
+result.innerHTML='<div class="previewmessage" role="status"><strong>Reading your barcode</strong><p>Looking up the product and checking its ingredients. This may take a moment.</p></div>';
+try {
+ const response=await fetch('/api/scan',{method:'POST',headers:{'Content-Type':photo.type},body:photo});
+ const payload=await response.json();
+ if(!response.ok) throw new Error(payload.error||'The checker could not finish.');
+ renderResult(payload);
+} catch(error) {
+ document.getElementById('resulttag').textContent='Could not check photo';
+ result.innerHTML='<div class="previewmessage"><strong>Let’s try that again</strong><p>'+escapeHTML(error.message)+'</p></div>';
+} finally {setBusy(false);}
+}
+let busy=false;
+function setBusy(value){busy=value;document.querySelectorAll('button').forEach(button=>button.disabled=value);drop.setAttribute('aria-busy',String(value));}
+function escapeHTML(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function renderResult(product){
+ const assessment=product.assessment;
+ document.getElementById('resulttag').textContent='Checker result';
+ const color=assessment.concerns_found?'caution':assessment.assessment_status==='bladder_friendly'?'friendly':'';
+ const title=product.product_name||(product.lookup_status==='not_found'?'Product not found':'Product');
+ const message=product.lookup_status==='not_found'?'This barcode has no product record in Open Food Facts.':assessment.message;
+ const rows=assessment.ingredients.map(row=>{
+  const rating=row.irritation_rating;
+  const kind=['foods_to_avoid','most_bothersome','unrated_potential_concern'].includes(rating)?'warn':rating==='usually_bladder_friendly'?'good':'';
+  const match=row.applied_match?'<div class="small">Uses close match '+escapeHTML(row.name)+'</div>':'';
+  const q=row.quantity_evidence||{};
+  let amount=row.quantity_note||'';
+  if(!amount&&q.status==='disclosed')amount='Disclosed amount: '+q.value+' '+q.unit+(q.unit==='%'?'':' per serving');
+  if(!amount&&q.upper_bound_percent!==undefined)amount='Label limit: '+q.upper_bound_percent+'% or less';
+  return '<div class="row"><div>'+escapeHTML(row.ingredient)+match+(amount?'<div class="small">'+escapeHTML(amount)+'</div>':'')+'</div><span class="rating '+kind+'">'+escapeHTML(row.display_status)+'</span></div>';
+ }).join('');
+ result.innerHTML='<div class="status '+color+'"><div class="statusheading">IC friendliness</div><h3>'+escapeHTML(assessment.display_status)+'</h3><p>'+escapeHTML(message)+'</p></div><div class="product"><p class="productname">'+escapeHTML(title)+'</p><span class="productmeta">'+escapeHTML(product.brands||'')+' · Barcode '+escapeHTML(product.barcode)+'</span></div>'+
+ (rows?'<div class="ingredienttitle">What your checker found</div>'+rows:'')+
+ '<p class="resultnote">Confirm the product and ingredient list against your package. Product records can be incomplete or outdated.</p>'+
+ (product.warnings.length?'<p class="resultnote">'+product.warnings.map(escapeHTML).join('<br>')+'</p>':'')+
+ (product.original_label?'<details class="resultnote"><summary>View ingredient label</summary><p>'+escapeHTML(product.original_label)+'</p></details>':'')+
+ '<p class="resultnote"><a href="'+escapeHTML(product.source_url)+'" target="_blank" rel="noopener noreferrer">View product on Open Food Facts</a></p>';
+ if(product.lookup_status==='found') addReactionForm(product);
+
+}
+
+function addReactionForm(product){
+ const area=document.createElement('div');
+ area.className='reaction-area';
+ area.innerHTML='<button type="button" class="primary" aria-expanded="false">Record my reaction</button><div class="form-slot"></div>';
+ result.append(area);
+ const open=area.querySelector('button'), slot=area.querySelector('.form-slot');
+ open.addEventListener('click',()=>{
+  open.hidden=true;open.setAttribute('aria-expanded','true');
+  slot.innerHTML='<form class="reaction-form"><h3 style="margin:0;font-size:18px">How did you feel?</h3><label>Reaction<select name="outcome" required><option value="">Choose your reaction</option><option value="tolerated">Felt fine</option><option value="symptoms">Had symptoms</option><option value="unsure">Not sure yet</option></select></label><label>When did you eat it?<input name="ate_at" type="datetime-local" required></label><label>Portion <span class="small">Optional</span><input name="portion" maxlength="200" placeholder="e.g. one bar or half a serving"></label><label>Notes <span class="small">Optional</span><textarea name="notes" maxlength="4000" placeholder="How you felt and when you noticed it"></textarea></label><div class="form-actions"><button class="primary" type="submit">Save reaction</button><button class="secondary" type="button">Cancel</button></div><div class="form-feedback" role="status"></div></form>';
+  const form=slot.querySelector('form'), feedback=form.querySelector('.form-feedback');
+  const now=new Date();
+  form.elements.ate_at.value=new Date(now.getTime()-now.getTimezoneOffset()*60000).toISOString().slice(0,16);
+  form.elements.outcome.focus();
+  form.querySelector('.secondary').onclick=()=>{slot.replaceChildren();open.hidden=false;open.setAttribute('aria-expanded','false');open.focus();};
+  form.addEventListener('submit',async event=>{
+   event.preventDefault();
+   const ateAt=new Date(form.elements.ate_at.value);
+   if(Number.isNaN(ateAt.getTime())){feedback.textContent='Choose the date and time you ate this food.';return;}
+   const payload={food:product.product_name||'Product '+product.barcode,barcode:product.barcode,
+     ingredients:product.assessment.ingredients.map(row=>row.ingredient),
+     outcome:form.elements.outcome.value,portion:form.elements.portion.value,
+     notes:form.elements.notes.value,ate_at:ateAt.toISOString()};
+   form.querySelectorAll('button').forEach(button=>button.disabled=true);
+   feedback.textContent='Saving your reaction…';
+   try{
+    const response=await fetch('/api/reactions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    const saved=await response.json();
+    if(!response.ok)throw new Error(saved.error||'Your reaction could not be saved.');
+    slot.innerHTML='<p class="saved-message" role="status">Reaction saved to your food diary.</p>';
+   }catch(error){feedback.textContent=error.message;form.querySelectorAll('button').forEach(button=>button.disabled=false);}
+  });
+ });
+}
+
+file.addEventListener('change',()=>showFile(file.files[0]));['dragenter','dragover'].forEach(type=>drop.addEventListener(type,e=>{e.preventDefault();drop.classList.add('over')}));['dragleave','drop'].forEach(type=>drop.addEventListener(type,e=>{e.preventDefault();drop.classList.remove('over')}));drop.addEventListener('drop',e=>showFile(e.dataTransfer.files[0]));document.getElementById('resulttag').textContent='Ready to scan';
+result.innerHTML='<div class="previewmessage"><strong>Your next food check starts here.</strong><p>Drop a barcode photo or choose one from your device. Your product and IC status will appear here.</p></div>';
+document.querySelectorAll('[data-sample]').forEach(b=>b.setAttribute('aria-pressed','false'));
+</script>
+</body></html>

@@ -1,0 +1,140 @@
+[
+  {
+    "id": "whey_protein_isolate",
+    "name": "Whey protein isolate",
+    "category": "milk protein",
+    "description": "A concentrated protein ingredient made from whey, the liquid portion of milk left after separation.",
+    "source_url": "https://www.fda.gov/media/98672/download",
+    "terms": [
+      "whey protein isolate"
+    ]
+  },
+  {
+    "id": "coconut_milk_powder",
+    "name": "Coconut milk powder",
+    "category": "coconut product",
+    "description": "A powdered product made by drying coconut milk. Check the label for any added ingredients.",
+    "source_url": "https://www.fssai.gov.in/upload/uploadfiles/files/Chapter%202_3_Fruit_Vegetable_products.pdf",
+    "terms": [
+      "coconut milk powder"
+    ]
+  },
+  {
+    "id": "coconut_milk",
+    "name": "Coconut milk",
+    "category": "coconut product",
+    "description": "A liquid coconut product made from coconut flesh.",
+    "source_url": "https://www.fao.org/input/download/standards/10401/CXS_240e.pdf",
+    "terms": [
+      "coconut milk"
+    ]
+  },
+  {
+    "id": "tapioca_maltodextrin",
+    "name": "Tapioca maltodextrin",
+    "category": "starch-derived ingredient",
+    "description": "Maltodextrin made from tapioca starch. Maltodextrin can also be made from other starch sources.",
+    "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=MALTODEXTRIN&set=FoodSubstances",
+    "terms": [
+      "tapioca maltodextrin"
+    ]
+  },
+  {
+    "id": "coconut_oil",
+    "name": "Coconut oil",
+    "category": "oil",
+    "description": "An oil obtained from coconut.",
+    "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=COCONUTOIL&set=FoodSubstances",
+    "terms": [
+      "coconut oil"
+    ]
+  },
+  {
+    "id": "acacia_fiber",
+    "name": "Acacia fiber",
+    "category": "plant fiber",
+    "description": "A fiber ingredient also known as acacia gum or gum arabic.",
+    "source_url": "https://hfpappexternal.fda.gov/scripts/Fdcc/?id=ACACIAGUM&set=FoodSubstances",
+    "terms": [
+      "acacia fiber",
+      "acacia gum",
+      "gum acacia",
+      "gum arabic"
+    ]
+  },
+  {
+    "id": "malic_acid",
+    "name": "Malic acid",
+    "category": "acidulant",
+    "description": "A food ingredient used to adjust acidity or enhance flavor.",
+    "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=MALICACID&set=FoodSubstances",
+    "terms": [
+      "malic acid"
+    ]
+  },
+  {
+    "id": "natural_flavors",
+    "name": "Natural flavors",
+    "category": "collective label term",
+    "description": "The label can use this term for a flavor mixture without identifying the individual flavor ingredients.",
+    "source_url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients",
+    "terms": [
+      "natural flavor",
+      "natural flavors"
+    ]
+  },
+  {
+    "id": "citric_acid",
+    "name": "Citric acid",
+    "category": "acidulant",
+    "description": "A food acid that can be used in preservation and other food applications.",
+    "source_url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients",
+    "terms": [
+      "citric acid"
+    ]
+  },
+  {
+    "id": "sucralose",
+    "name": "Sucralose",
+    "category": "sweetener",
+    "description": "A high-intensity sweetener.",
+    "source_url": "https://www.fda.gov/food/food-additives-petitions/high-intensity-sweeteners",
+    "terms": [
+      "sucralose"
+    ]
+  },
+  {
+    "id": "spirulina",
+    "name": "Spirulina",
+    "category": "cyanobacteria",
+    "description": "A food ingredient made from dried Arthrospira biomass.",
+    "source_url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=127&set=GRASNotices",
+    "terms": [
+      "spirulina"
+    ]
+  },
+  {
+    "id": "rebaudioside_m",
+    "name": "Rebaudioside M",
+    "category": "sweetener",
+    "description": "A specific steviol glycoside used as a high-intensity sweetener.",
+    "source_url": "https://www.fda.gov/media/131903/download?attachment=",
+    "terms": [
+      "reb m",
+      "rebaudioside m",
+      "reb m (stevia)",
+      "rebaudioside m (stevia)"
+    ]
+  },
+  {
+    "id": "monk_fruit_extract",
+    "name": "Monk fruit extract",
+    "category": "sweetener",
+    "description": "A high-intensity sweetener extracted from monk fruit, also known as Luo Han Guo.",
+    "source_url": "https://www.fda.gov/food/food-additives-petitions/high-intensity-sweeteners",
+    "terms": [
+      "monk fruit extract",
+      "luo han guo extract"
+    ]
+  }
+]
